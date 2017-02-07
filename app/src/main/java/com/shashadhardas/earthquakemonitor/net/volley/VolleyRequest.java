@@ -3,7 +3,7 @@ package com.shashadhardas.earthquakemonitor.net.volley;
 import android.content.Context;
 
 /**
- * Created by anutosh on 25-05-2016.
+ * Created by shashadhar on 05-02-2017.
  */
 public class VolleyRequest {
 
