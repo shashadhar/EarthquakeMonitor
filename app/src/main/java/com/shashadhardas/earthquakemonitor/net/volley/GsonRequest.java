@@ -36,7 +36,7 @@ public class GsonRequest<T> extends Request<T> {
         this.listener = listener;
     }
 
-    void setRequestBody(String val){
+    void setRequestBody(String val) {
         this.mRequestBody = val;
     }
 
@@ -47,7 +47,7 @@ public class GsonRequest<T> extends Request<T> {
 
 
     @Override
-    public byte[] getBody(){
+    public byte[] getBody() {
         try {
             return mRequestBody == null ? null : mRequestBody.getBytes("utf-8");
         } catch (UnsupportedEncodingException uee) {

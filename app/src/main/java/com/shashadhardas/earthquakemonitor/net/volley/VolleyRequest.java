@@ -9,8 +9,14 @@ public class VolleyRequest {
 
     public int method;
     public String url;
+
     public String data;
+
     public String contentType;
+
     public Context context;
+
     public String tag;
+
+
 }
