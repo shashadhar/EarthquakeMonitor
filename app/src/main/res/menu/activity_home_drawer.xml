@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_significantEQ"
+            android:icon="@drawable/ic_warning_black_24dp"
+            android:title="Significant EarthQuake" />
+        <item
+            android:id="@+id/nav_m4.5EQ"
+            android:icon="@drawable/ic_graphic_eq_black_24dp"
+            android:title="M4.5+ Earthquakes" />
+
+        <item
+            android:id="@+id/nav_m2.5EQ"
+            android:icon="@drawable/ic_warning_black_24dp"
+            android:title="M2.5+ Earthquakes" />
+
+        <item
+            android:id="@+id/nav_m1.0EQ"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="M1.0+ Earthquakes" />
+
+
+        <item
+            android:id="@+id/nav_allEQ"
+            android:icon="@drawable/ic_graphic_eq_black_24dp"
+            android:title="All Earthquakes" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+</menu>

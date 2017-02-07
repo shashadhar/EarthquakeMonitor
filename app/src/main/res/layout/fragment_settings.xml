@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root_layout"
+        android:background="#ffffff">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_below="@+id/toolbar">
+            <RelativeLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/profileLt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="2dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="10dp">
+
+                    <LinearLayout android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/changePassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Notification Magnitude"
+                            android:textAllCaps="false"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/black_color"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            />
+
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/seekBarMag"
+                            android:max="10"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete" />
+
+                        <TextView
+                            android:id="@+id/magValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0/60"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/black_color"
+                            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#d3d3d3"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical"
+                            android:layout_alignParentBottom="true"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/intervalLbl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Periodic update Interval(Minutes)"
+                                android:textAllCaps="false"
+                                android:gravity="left|center_vertical"
+                                android:paddingLeft="15dp"
+                                android:textColor="@color/black_color"
+                                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                            <SeekBar
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/seekBarInterval"
+                                android:max="60"
+                                style="@style/Widget.AppCompat.SeekBar.Discrete" />
+
+                            <TextView
+                                android:id="@+id/intervalValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0/60"
+                                android:textAllCaps="false"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:textColor="@color/black_color"
+                                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#d3d3d3"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical"
+                            android:layout_alignParentBottom="true"/>
+
+                        <Button
+                            android:id="@+id/update"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Update"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/black_color"
+                            style="@style/Widget.AppCompat.Button.Borderless"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

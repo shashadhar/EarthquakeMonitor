@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorOffWhite">#baf4ed</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_block">#7C7C7C</color>
+    <color name="event_unavailable">#fa8e84</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_cancelled">#F13434</color>
+    <color name="event_default">#449d44</color>
+    <color name="event_color_04">#f8b552</color>
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#2789e4</color>
+    <color name="accent_disabled">#802789e4</color>
+    <color name="GrayLight">#eeeeee</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="dirty_rose">#ED6D4F</color>
+    <color name="dirty_rose_transparent">#80ED6D4F</color>
+    <color name="gray">#d3d3d3</color>
+    <color name="gray_tab_bg">#e8e8e8</color>
+    <color name="carrot_orange">#ed9121</color>
+    <color name="green">#3ab54a</color>
+    <color name="green_disabled">#803ab54a</color>
+    <color name="red">#e25a44</color>
+    <color name="radical_red">#F62459</color>
+    <color name="red_disabled">#80e25a44</color>
+    <color name="black_color">#000000</color>
+    <color name="sub_black_color">#333333</color>
+    <color name="pink">#FF4081</color>
+    <color name="success_green">#c07ca500</color>
+    <color name="orange">#d9534f</color>
+    <color name="sunflower">#f1c40f</color>
+    <color name="publisher_border_color">#FFFFFF</color>
+    <color name="disabled_overlay">#A0ffffff</color>
+    <color name="enabled_overlay">#00ffffff</color>
+    <color name="gray_bg">#efefef</color>
+    <color name="light_gray">#efefef</color>
+    <color name="light_gray_transparent">#DDefefef</color>
+</resources>
