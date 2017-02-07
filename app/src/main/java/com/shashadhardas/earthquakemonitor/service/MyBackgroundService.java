@@ -27,6 +27,7 @@ import com.shashadhardas.earthquakemonitor.utils.SettingsManager;
 import com.shashadhardas.earthquakemonitor.utils.Utils;
 
 import java.util.List;
+import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -37,6 +38,7 @@ import java.util.TimerTask;
 public class MyBackgroundService extends Service {
     private static  int NOTIFY_INTERVAL = SettingsManager.getInstance().getDefaultInterval();
     private static  double MIN_MAGNITUDE = SettingsManager.getInstance().getDefaultMagnitude();
+    private   int notificationId=0;
     public  static String ARG_NOTIFY_INTERVAL="ARG_NOTIFY_INTERVAL";
     public  static String ARG_NOTIFY_MAGNITUDE="ARG_NOTIFY_MAGNITUDE";
     public  static String ARG_RE_CREATE="ARG_RE_CREATE";
@@ -133,13 +135,13 @@ public class MyBackgroundService extends Service {
                     public void EQLoaded(List<EarthQuake.Feature> features) {
                         //sendNotification("test","test");
                         if(features!=null && features.size()>0){
-                            int notificationId=0;
+
                             for(EarthQuake.Feature feature:features){
                                 String title=feature.getProperties().getTitle();
                                 String body=feature.getProperties().getPlace();
                                 Log.e("MyBackgroundService:fic",body+":"+title);
                                 sendNotification(body,title,notificationId);
-                                notificationId=notificationId+1;
+                                notificationId= (int)Math.random();
                             }
 
 
