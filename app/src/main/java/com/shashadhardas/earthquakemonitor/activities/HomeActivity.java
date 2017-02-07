@@ -60,7 +60,8 @@ public class HomeActivity extends BaseActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
        // getMenuInflater().inflate(R.menu.home, menu);
-        return true;
+       return super.onCreateOptionsMenu(menu);
+        //return true;
     }
 
     @Override
@@ -99,7 +100,7 @@ public class HomeActivity extends BaseActivity
 
         }else if (id == R.id.nav_settings) {
             fragmentManager.beginTransaction().replace(R.id.content_fragment, Settings.newInstance()).commit();
-            bar.setTitle("All Earthquakes");
+            bar.setTitle("Settings");
 
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
