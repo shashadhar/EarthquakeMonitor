@@ -140,8 +140,8 @@ public class MyBackgroundService extends Service {
                                 String title=feature.getProperties().getTitle();
                                 String body=feature.getProperties().getPlace();
                                 Log.e("MyBackgroundService:fic",body+":"+title);
-                                sendNotification(body,title,notificationId);
                                 notificationId= (int)Math.random();
+                                sendNotification(body,title,notificationId);
                             }
 
 
