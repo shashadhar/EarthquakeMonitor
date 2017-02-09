@@ -12,8 +12,12 @@ public class SettingsManager {
     private static final int PRIVATE_MODE = 0;
     private static final String PREF_NAME = "EarthquakePreference";
     private static final String LAST_SERVICE_DESTROYED_TIME="LAST_SERVICE_DESTROYED_TIME";
+    private static final String LAST_UPDATED_START_TIME="LAST_UPDATED_START_TIME";
+    private static final String LAST_UPDATED_END_TIME="LAST_UPDATED_END_TIME";
     private static final String DEFAULT_MAGNITUDE="DEFAULT_MAGNITUDE";
     private static final String DEFAULT_INTERVAL="DEFAULT_INTERVAL";
+    private static final String IS_ALARM_SET="IS_ALARM_SET";
+
 
     private final SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
@@ -113,6 +117,63 @@ public class SettingsManager {
         try {
             doEdit();
             editor.putInt(DEFAULT_INTERVAL, val);
+            doCommit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public boolean getIsAlarmSet() {
+        try {
+            return sharedPreferences.getBoolean(IS_ALARM_SET, false);
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+
+    public void setIsAlarmSet(Boolean val) {
+        try {
+            doEdit();
+            editor.putBoolean(IS_ALARM_SET, val);
+            doCommit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public long getLastUpdatedStartTime() {
+        try {
+            return sharedPreferences.getLong(LAST_UPDATED_START_TIME, 0);
+        } catch (Exception e) {
+            return 0;
+        }
+
+    }
+
+    public void setLastUpdatedStartTime(long val) {
+        try {
+            doEdit();
+            editor.putLong(LAST_UPDATED_START_TIME, val);
+            doCommit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public long getLastUpdatedEndTime() {
+        try {
+            return sharedPreferences.getLong(LAST_UPDATED_END_TIME, 0);
+        } catch (Exception e) {
+            return 0;
+        }
+
+    }
+
+    public void setLastUpdatedEndTime(long val) {
+        try {
+            doEdit();
+            editor.putLong(LAST_UPDATED_END_TIME, val);
             doCommit();
         } catch (Exception e) {
             e.printStackTrace();

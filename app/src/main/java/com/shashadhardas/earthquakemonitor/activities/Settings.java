@@ -96,7 +96,8 @@ public class Settings extends Fragment {
                 try {
                     SettingsManager.getInstance().setDefaultInterval(interval);
                     SettingsManager.getInstance().setDefaultMagnitude(magnitude);
-                    EarthQuakeApplication.getInstance().startService();
+                    // EarthQuakeApplication.getInstance().startService();
+                    EarthQuakeApplication.getInstance().startAlarm();
                     ((BaseActivity)getActivity()).displaySuccess("Data updated successfully and you will be notified with next earthquake.");
                 } catch (Exception e) {
                     e.printStackTrace();
